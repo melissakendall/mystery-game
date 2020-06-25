@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Mystery Game</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+
+		<div class="alert alert-info" role="alert">
+			Learn the <a href="rules.html">Rules</a>.
+		</div>
+		<hr/>
+
+		<div class="form-group">
+			<select id="caseNo" class="form-control">
+				<option value="Select a Case" selected disabled>Select a Case</option>
+				<option value="0">The Mystery of the Discerning Doctor</option>
+				<option value="1">The Mystery of the Missing Miscreant</option>
+				<option value="2">The Mystery of the Bludgeoned Barrister</option>
+				<option value="3">The Mystery of the Horrific Homicides</option>
+				<option value="4">The Mystery of the Petulant Princess</option>
+				<option value="5">The Mystery of the Ardent Arsonist</option>
+			</select>
+		</div>
+
+		<div class="form-group">
+			<textarea id="casedescription" class="form-control" placeholder="Case Description" readonly rows="15" cols="50"></textarea>
+		</div>
+
+		<div class="form-row">
+			<div class="form-group col-md-2">
+				<button id="prevClue" class="form-control btn btn-primary" type="button"><</button>				
+			</div>		
+
+			<div class="form-group col-md-8">
+				<select id="clueList" class="form-control">
+					<option value="-1" selected="">Select a Clue</option>
+				</select>
+			</div> 
+
+
+			<div class="form-group col-md-2">
+				<button id="nextClue" class="form-control btn btn-primary" type="button">></button>				
+			</div>
+		</div>
+		
+		<div class="form-group">
+			<textarea id="description" class="form-control" placeholder="Clue Text" readonly rows="15" cols="50"></textarea>
+		</div>
+		
+		<div class="form-group">
+			<button id="solve" class="form-control btn btn-primary" type="button">Solve</button>
+		</div>
+
+		<div class="form-group">
+			<textarea id="solution" class="form-control" placeholder="Solution" readonly rows="15" cols="50"></textarea>
+		</div>
+	</div>
+
+	<!-- Scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
